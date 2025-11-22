@@ -18,10 +18,10 @@ docker compose up -d --build
 > [!WARNING]  
 > Caso o comando acima não funcione, use este: `docker-compose up -d` ou use o Docker Desktop
 
-3. Abra **[http://localhost:8080/install.php](http://localhost:8080/install.php)** e clique no link `here` exibido na página.
+3. Abra **[http://localhost:8000/install.php](http://localhost:8000/install.php)** e clique no link `here` exibido na página.
 ![Instalação do bWAPP](assets/001-bwap-install.png "Instalação do bWAPP")
 
-4. Vá para **[http://localhost:8080/login.php](http://localhost:8080/login.php)**
+4. Vá para **[http://localhost:8000/login.php](http://localhost:8000/login.php)**
 ![Instalação do bWAPP](assets/002-bwapp-login.png "Login no bWAPP")
 
 > [!TIP]
