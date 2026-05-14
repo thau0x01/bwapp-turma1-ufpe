@@ -987,3 +987,17 @@ Para considerar que dominou o bWAPP no nível `low`, você deve conseguir, sem c
 - [ ] Extrair pelo menos um caractere por time-based em `sqli_15.php`.
 
 Quando todos os itens estiverem marcados, você cobriu manualmente o cardápio principal de SQLi e está pronto pra encarar alvos fora do laboratório.
+
+---
+
+## Material aprofundado por técnica
+
+Quando quiser ir além das fases gerais e estudar uma técnica isolada com profundidade — incluindo enumeração completa do `information_schema` aplicada no bWAPP deste repositório — consulte a pasta [`tecnicas/`](tecnicas/README.md):
+
+- [`tecnicas/union_based.md`](tecnicas/union_based.md) — UNION-based (in-band, com reflexão)
+- [`tecnicas/error_based.md`](tecnicas/error_based.md) — Error-based (`EXTRACTVALUE`, `UPDATEXML`, `FLOOR/GROUP BY`)
+- [`tecnicas/boolean_based.md`](tecnicas/boolean_based.md) — Blind boolean-based (SIM/NÃO)
+- [`tecnicas/time_based.md`](tecnicas/time_based.md) — Blind time-based (`SLEEP`, `BENCHMARK`)
+- [`tecnicas/stacked_queries.md`](tecnicas/stacked_queries.md) — Stacked queries (por que **não** funciona no bWAPP, e onde funciona)
+
+Comece pelo [`README`](tecnicas/README.md) da pasta — tem uma árvore de decisão pra escolher qual técnica abrir primeiro.
