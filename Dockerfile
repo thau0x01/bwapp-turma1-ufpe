@@ -7,6 +7,10 @@ RUN apt-get update \
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN a2enmod rewrite
 
+RUN pecl install xdebug-3.1.6 \
+    && docker-php-ext-enable xdebug
+COPY ./xdebug.ini /usr/local/etc/php/conf.d/99-xdebug.ini
+
 COPY ./bWAPP /var/www/html/
 RUN chown -R www-data:www-data /var/www/html \
     && chmod 777 /var/www/html/passwords/ \

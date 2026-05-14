@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for Xdebug (bWAPP container)",
+            "type": "php",
+            "request": "launch",
+            "port": 9003,
+            "pathMappings": {
+                "/var/www/html": "${workspaceFolder}/bWAPP"
+            },
+            "log": false,
+            "xdebugSettings": {
+                "max_data": 4096,
+                "max_children": 256,
+                "max_depth": 5
+            }
+        }
+    ]
+}

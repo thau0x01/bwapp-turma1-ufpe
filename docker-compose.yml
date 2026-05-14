@@ -3,12 +3,17 @@ services:
     build: .
     image: bwapp-php7:20240402
     ports:
-      - "8000:80"
+      - "80:80"
     depends_on:
       - db
     environment:
       - MYSQL_HOST=db
       - MYSQL_USER=root
+      - XDEBUG_MODE=debug
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./bWAPP:/var/www/html
 
   db:
     image: mariadb:10.6
